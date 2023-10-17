@@ -5,12 +5,19 @@ import model.jeu.TirageDes
 import model.item.*
 import model.personnage.Personnage
 import dao.QualiteDAO
+import generateur.GenerateurArmure
 import generateur.GenerateurQualites
+import generateur.GenerateurTypeArme
+import generateur.GenerateurTypeArmure
 
 //DEMO MISSION 1
 val generateurQualites = GenerateurQualites("assets/qualites.csv")
+val generateurTypeArme = GenerateurTypeArme("assets/TypeArme.csv")
+val generateurTypeArmure = GenerateurTypeArmure("assets/TypeArmure.csv")
 
 val qualites = generateurQualites.generer()
+val typeArme =  generateurTypeArme.generer()
+val typeArmure= generateurTypeArmure.generer()
 
 //DEMO MISSION 2 :
 // TODO Retirer les commentaires des lignes 21 et 24
